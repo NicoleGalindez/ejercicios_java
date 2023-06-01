@@ -27,7 +27,7 @@ for (i =0 ;  i<= 20;  i++){
   console.log(`numero: ${i}` )
 }
 */
-//------------------
+//----------------------------------------------
        //par e impar 
 /*
 let y;
@@ -62,8 +62,9 @@ for (i=0 ;  i<libros.length ; i++){
 }
 
 */
+//----------------------------------------------------------
 // nombre del padre con nombre del menor
-
+/*
 const tutores=[
   {padre:'pedro ', 
   menor: 'pepito' ,
@@ -89,4 +90,43 @@ for (t=0 ;  t<tutores.length ; t++){
 }
 for (t=0 ;  t<=tutores.length ; t++){
   console.table(`tutor: ${tutores[t].padre}, y menor: ${tutores[t].menor}`);
+}    //    ERROR LINEA ANTERIOR A ESTA?
+*/
+
+//-------------------------
+/*
+let i;
+for ( i=0; i<=10; i++){
+  console.log(i);
+  if(i===5){
+    console.log(`este es el numero ${i}`);
+    break;
+  }
+}
+for ( i=0; i<=10; i++){
+  console.log(i);
+  if(i===5){
+    console.log(`este es el numero ${i}`);
+    continue;
+  }
+}
+*/
+//---------ejm----
+const libros=[
+  {nombre:'la iliada ', precio: 15000 , pasta: 'dura'},
+  {nombre:'la odisea ', precio: 55000 , pasta: 'dura'},
+  {nombre:'el principito ', precio: 70000 , pasta: 'plastificada'},
+  {nombre:'psicoanalista ', precio: 95000 , pasta: 'dura'},
+  {nombre:'cien años de soledad ', precio: 45000 , pasta: 'dura'},
+]     // los arreglos siempre cuentan desde 0!!
+
+console.log(libros);
+
+for(i=0 ; i< libros.length;  i++){
+    if (libros[i].pasta ==='plastificada'){
+      console.log(`el libro ${libros[i].nombre}, tiene descuento en la tienda`)
+        break;
+    }
+    console.log(libros[i].nombre);
+
 }
