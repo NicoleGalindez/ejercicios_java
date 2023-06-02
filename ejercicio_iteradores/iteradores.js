@@ -112,6 +112,7 @@ for ( i=0; i<=10; i++){
 }
 */
 //---------ejm----
+/*
 const libros=[
   {nombre:'la iliada ', precio: 15000 , pasta: 'dura'},
   {nombre:'la odisea ', precio: 55000 , pasta: 'dura'},
@@ -128,5 +129,144 @@ for(i=0 ; i< libros.length;  i++){
         break;
     }
     console.log(libros[i].nombre);
+
+}
+*/
+
+//_____________________while__________________________
+/*
+let i=0;
+while (i<50){
+  console.log(`el numero ${i}`); //condicion
+  i++;  //incremetno
+}
+*/
+
+
+
+// par e impar
+/*
+let x=0;
+while (x<=20){
+  if (x%2==0){
+   
+  }
+}
+
+
+//_____do while 
+
+let i=0;
+do {
+  console.log(`los numeros en orden ${i}`);
+  i++;
+} while (i<10);
+*/
+
+//______________EJERCICIO______________________________
+/*
+// pide numero, si el numero 
+// es par ejecuta, sino siga pidiendo
+
+let i=0;
+let x,y;
+// do{
+//   x=prompt ("dijita un numero entero");
+//    i++;
+// }while(x/x!==0 && x%2!==0 );
+
+   
+do {
+      // while(i<=x){
+      //   if(x/x!==0 && x%2!==0 ) { x=prompt ("dijita un numero entero");
+      //       i++;}
+      // }
+  console.log(`${i}`);
+       if (i%3===0 && i%5===0){
+        console.log(`${i}   PING PONG`);
+         }
+    else if (i%3 === 0 ){
+        console.log(`${i}  es PING`);
+         }
+    else if (i%5 === 0 ){
+        console.log(`${i} es PONG`);
+        }
+  i++;
+
+} while (i<=x);
+
+*/
+
+
+//   _______FOREACH
+/*
+let pendientes=['tarea', 'comer', 'estudiar','bañar...'];
+pendientes.forEach(pendientes=>console.log(pendientes));
+
+
+let pendientes1=['tarea', 'comer', 'estudiar','bañar...'];
+pendientes.forEach((pendientes1, indic)=>{
+  console.log(`${indic}: ${pendientes1}`);
+});
+*/
+
+/*
+const libros=[
+  {nombre:'la iliada ', precio: 15000 , pasta: 'dura'},
+  {nombre:'la odisea ', precio: 55000 , pasta: 'dura'},
+  {nombre:'el principito ', precio: 70000 , pasta: 'plastificada'},
+  {nombre:'psicoanalista ', precio: 95000 , pasta: 'dura'},
+  {nombre:'cien años de soledad ', precio: 45000 , pasta: 'dura'},
+]
+
+libros.forEach((libro)=>{
+console.log(libro.precio, libro.pasta, libro.nombre);
+});   //forma normal
+//  libros.forEach( (libro)=> console.log(libro.precio, libro.pasta));
+// lo mismo pero froma con arrow funcion
+
+libros.map((libro) =>{
+  console.log(libro.nombre, libro.pasta);
+});
+*/
+
+
+
+//________FOR OF________________
+/*
+let pendientes=['tarea', 'comer', 'estudiar','bañar...'];
+
+for (let otra of pendientes){
+  console.log(otra);
+
+}
+
+
+const libros=[
+  {nombre:'la iliada ', precio: 15000 , pasta: 'dura'},
+  {nombre:'la odisea ', precio: 55000 , pasta: 'dura'},
+  {nombre:'el principito ', precio: 70000 , pasta: 'plastificada'},
+  {nombre:'psicoanalista ', precio: 95000 , pasta: 'dura'},
+  {nombre:'cien años de soledad ', precio: 45000 , pasta: 'dura'},
+]
+
+for(let biblioteca of libros){
+  console.log(biblioteca);
+}
+
+for(let solouno of libros){
+  console.log(solouno.nombre);
+}
+*/
+//________FOR IN_______ objetos___
+
+const libros1=[ {nombre:'la iliada ', precio: 15000 , pasta: 'dura'}];
+
+for(let biblioteca1 in libros1){
+  console.log(biblioteca1);
+}
+
+for(let [llave, valor] of objet.entries(libros1)){
+  console.log( ...);
 
 }

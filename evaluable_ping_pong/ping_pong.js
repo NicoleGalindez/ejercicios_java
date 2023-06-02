@@ -1,21 +1,4 @@
-/* 
-//           ------------
-let i;
-for ( i=0; i<=10; i++){
-  console.log(i);
-  if(i===5){
-    console.log(`este es el numero ${i}`);
-    break;
-  }
-}
-for ( i=0; i<=10; i++){
-  console.log(i);
-  if(i===5){
-    console.log(`este es el numero ${i}`);
-    continue;
-  }
-}
-
+/*
 let y;
 
 for( y = 0; y<= 50;  y++){
