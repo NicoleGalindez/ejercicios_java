@@ -174,7 +174,7 @@ do{
 // console.log(card.children[0].src);
 // card.children[0].src='img/hacer3.jpg';
 
-
+//-------------------------------------------------------------------------------------------------
 
 const navegacion=document.querySelector('.navegacion');
 console.log(navegacion.lastchild);
@@ -256,8 +256,26 @@ do{
             console.log(imagen.src);
             imagen.src='img/hacer4.jpg';
             //textos:
-            document.querySelector('.categoria-concierto p').textContent='toque de electronica' ;
 
+            //document.querySelector('.card categoria concierto ').textContent=' ciclo ruta nocturna? ' ;  // no seeeee
+
+            document.querySelector('.hacer h2').textContent='¿Que deseas hacer hoy?' ;
+
+            document.querySelector('.mi-viaje-plus').textContent='no se que escribir bla bla bla ';
+
+            document.querySelector('.hacer  h3').textContent='je je je, je je je jejeje ';
+
+            document.querySelector('.hospedaje h2 ').textContent='HOGAREEES BONIS BONIS ';
+            
+            document.querySelector('.destinos h2 ').textContent='lugares de ensueño ';
+
+            document.querySelector('hacer h2 ').textContent='tampoco se que poner';
+
+
+            // document.querySelector('.contenedor-cards categoria hospedaje').textContent='casa familiar, 3 habitaciones '; // no funciona?
+
+            // document.querySelector('.contenedor-cards premium h3').textContent=' ooooh oooo ooooh ooooooh ooooh oooh  ' ;
+            
 
            
        }
