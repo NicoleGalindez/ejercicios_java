@@ -176,9 +176,9 @@ do{
 
 //-------------------------------------------------------------------------------------------------
 
-const navegacion=document.querySelector('.navegacion');
-console.log(navegacion.lastchild);
-console.log(navegacion.lastElementChild);
+// const navegacion=document.querySelector('.navegacion');
+// console.log(navegacion.lastchild);
+// console.log(navegacion.lastElementChild);
 
 
 //
@@ -224,7 +224,7 @@ let ingresa;
 //
 //EJERCICIO 3_______________________
 
-
+/*
 //  bienvenido, menu y contenido dependiendo 1,2,3:
  
 
@@ -248,9 +248,11 @@ do{
 
            //imagenes:
            //
-            const imagen=document.querySelector('.card img');
+            const imagen=document.querySelector('.card img2');
             console.log(imagen.src);
-            imagen.src='img/hacer3.jpg';
+            imagen.src='img/hacer4.jpg';
+        
+
             //
             const imagen1=document.querySelector('.card img');
             console.log(imagen.src);
@@ -261,7 +263,7 @@ do{
 
             document.querySelector('.hacer h2').textContent='¿Que deseas hacer hoy?' ;
 
-            document.querySelector('.mi-viaje-plus').textContent='no se que escribir bla bla bla ';
+            document.querySelector('.mi-viaje-plus').textContent='no se que  ba bla bla ';
 
             document.querySelector('.hacer  h3').textContent='je je je, je je je jejeje ';
 
@@ -289,6 +291,30 @@ do{
            navegacion.children[3].remove('inicia sesion');
 
            //-----contenido:-------------
+           
+
+
+           //textos:
+           //document.querySelector('.card categoria concierto ').textContent=' ciclo ruta nocturna? ' ;  // no seeeee
+
+           document.querySelector('.hacer h2').textContent='¿Queeeeeeeeeeeeeeeee?' ;
+
+           document.querySelector('.mi-viaje-plus').textContent='123123123123123 ';
+
+           document.querySelector('.hacer  h3').textContent='laaaaaaaaaa';
+
+           document.querySelector('.hospedaje h2 ').textContent='casascasascasascasascasas ';
+           
+           document.querySelector('.destinos h2 ').textContent='lugares lugares lugares  ';
+
+           document.querySelector('hacer h2 ').textContent='juuuummmm';
+
+
+           // document.querySelector('.contenedor-cards categoria hospedaje').textContent='casa familiar, 3 habitaciones '; // no funciona?
+
+           // document.querySelector('.contenedor-cards premium h3').textContent=' ooooh oooo ooooh ooooooh ooooh oooh  ' ;
+           
+
        }
        else if(ingresa===3){
            document.querySelector('.contenido-hero h1').textContent='bienvenido a ConfiApp ' ;
@@ -297,6 +323,8 @@ do{
            
        }
        
+
+       */
 //___________
 
 
@@ -306,3 +334,155 @@ do{
 // imagen.src='img/populares1.jpg';
 //_______ para cambiar texto______________
 // document.querySelector('.contenido-hero h1').textContent='Aprendices adso ...' ;
+
+
+//________cambiar imagenes_______
+//     // ___________________________
+            
+//     console.log(card.children);
+//     console.log(card.children[3]);
+//     console.log(card.children[3].src);
+//     card.children[3].src='img/hacer1.jpg';
+// //_________________________
+
+// console.log(navegacion.firstChild);
+// console.log(navegacion.firstElemtnChild);
+//__------------------------------------------
+/*
+const enlace= document.querySelector('a');
+console.log(enlace);
+
+console.log(enlace.parentNode);
+console.log(enlace.parentElement);
+
+
+console.log(elace.parentElement.parentElement)
+*/
+//------ al siguiente ----
+/*
+console.log(enlace);
+console.log(enlace.nextElementSibling);
+console.log(enlace.nextElementSibling.nextElementSibling);
+
+console.log(enlace.nextElementSibling);
+
+*/
+//------ al anterior-----
+
+
+//_____________________09______elminar elementos__________
+/*
+const primerenlace=document.querySelector('a');
+console.log(primerenlace);
+
+primerenlace.remove();
+*/
+//----
+
+/*
+const navegacion1=document.querySelector('.navegacion');
+
+navegacion1.removeChild(navegacion1.children[2]);
+
+const borrar= navegacion.children[0]
+navegacion.removeChild(borrar);
+*/
+
+
+//________________________10__________crear  elementos__________
+
+/*
+const enlace=document.createElement('a');
+
+enlace.textContent='nuevo enlace';
+
+enlace.href='htpp://www.sena.edu.co';
+enlace.target='_blank';
+console.log(enlace);
+
+
+const navegacion=documetn.querySelector('.navegacion');
+navegacion.appendChild(enlace);
+
+navegacion.insertBefore(enlace, navegacion.children[3]);
+
+*/
+
+//_____________notificaciones
+
+/*
+enlace.onclick=alertas;
+function alertas(){
+    alert('hola estas a punto de ....');
+}
+
+console.log(enlace);
+*/
+
+//____________________________
+/*
+const parrafo1= document.createElement('p');
+parrafo1.textContent='aprendiz';
+parrafo1.classList.add('categoia');
+parrafo1.classList.add('concierto');
+
+
+const parrafo2= document.createElement('p');
+parrafo2.textContent='nombre';
+parrafo2.classList.add('titulo');
+
+
+const parrafo3= document.createElement('p');
+parrafo3.textContent='jornada';
+parrafo3.classList.add('precio');
+
+
+const info=document.createElement('div');
+info.classList.add8('info');
+info.append.child(parrafo1)
+info.append.child(parrafo2)
+info.append.child(parrafo3);
+
+
+const imagen=document.createElement('img');
+imagen.src='img/hacer4.jpg';
+
+imagen.alt='texto alternativo';
+ const card=document.createElement('div');
+ card.classList.add('card');
+
+ card.appendChild(imagen);
+ card.appendChild(info);
+
+
+ const contenedor=document.querySelector('.hacer .contenedor-cards');
+ contenedor.appendChild(card);
+ console.log(parrafo1);
+ console.log(parrafo2);
+*/
+
+//__________________11_________
+
+const btnFlotante=document.querySelector('.btn-flotante');
+const footer=document.querySelector('.footer');
+
+btnFlotante.addEventListener('click',()=>{
+    alert('diste click');
+})
+
+// mostrar ocultar
+
+
+btnFlotante.addEventListener('click', mostrar);
+function mostrar(){
+    if(footer.classList.contains('activo')){
+        footer.classList.remove('activo');
+        this.classList.remmove('activo');
+        this.textContent='idioma y moneda';
+    } else {
+        footer.classList.add('activo');
+        this.classList.add('activo');
+        this.textContent='x cerrar';
+    }
+
+}
