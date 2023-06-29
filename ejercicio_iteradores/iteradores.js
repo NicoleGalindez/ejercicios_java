@@ -267,6 +267,6 @@ for(let biblioteca1 in libros1){
 }
 
 for(let [llave, valor] of objet.entries(libros1)){
-  console.log( ...);
+  console.log( );
 
 }

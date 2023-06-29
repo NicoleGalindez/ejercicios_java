@@ -99,7 +99,10 @@ sesion();   // une funciones ---------
 
 
 // ----------------------------------
+//  saludo
+
 /*
+
 function iniciosesion (usuario="sin autenticar"){
     console.log('estamos verificando su identidad ');
     console.log(`bienvenido ${usuario}`);
@@ -112,8 +115,8 @@ function bienvenido (){
     iniciosesion('angela');
 }
 bienvenido();
-*/
 
+*/
 
 //____________retornar valores____________
 

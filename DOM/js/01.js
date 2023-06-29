@@ -186,7 +186,7 @@ do{
 
 
 //  bienvenido y menu dependiendo 1,2,3:
- /*
+ 
 
 let ingresa;
 
@@ -219,7 +219,7 @@ let ingresa;
             
         }
         
-*/
+
         
 //
 //EJERCICIO 3_______________________
